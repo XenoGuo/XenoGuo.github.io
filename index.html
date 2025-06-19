@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac","show_in_mobile":true},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="XenoGuo&#39;s BLOG">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="XenoGuo&#39;s BLOG">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="XenoGuo">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>XenoGuo's BLOG</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">XenoGuo's BLOG</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-%E5%89%8D%E7%AB%AF%E8%AF%B7%E6%B1%82%E5%BD%A2%E5%A6%820-200%E6%9F%A5%E8%AF%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-%E5%89%8D%E7%AB%AF%E8%AF%B7%E6%B1%82%E5%BD%A2%E5%A6%820-200%E6%9F%A5%E8%AF%A2/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:31:26" itemprop="dateCreated datePublished" datetime="2025-06-19T14:31:26+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="下拉框中的模糊范围"><a href="#下拉框中的模糊范围" class="headerlink" title="下拉框中的模糊范围"></a>下拉框中的模糊范围</h1><ul>
+<li>将value定义为字符串</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 将value定义为字符串 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">el-select</span> <span class="attr">v-model</span>=<span class="string">&quot;selectedAmountRange&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width:180px&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-option</span> <span class="attr">:label</span>=<span class="string">&quot;&#x27;0-100元&#x27;&quot;</span> <span class="attr">value</span>=<span class="string">&quot;0-100&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-option</span> <span class="attr">:label</span>=<span class="string">&quot;&#x27;100-200元&#x27;&quot;</span> <span class="attr">value</span>=<span class="string">&quot;100-200&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-option</span> <span class="attr">:label</span>=<span class="string">&quot;&#x27;200-500元&#x27;&quot;</span> <span class="attr">value</span>=<span class="string">&quot;200-500&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-option</span> <span class="attr">:label</span>=<span class="string">&quot;&#x27;500-1000元&#x27;&quot;</span> <span class="attr">value</span>=<span class="string">&quot;500-1000&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-option</span> <span class="attr">:label</span>=<span class="string">&quot;&#x27;1000元以上&#x27;&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1000-null&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>将字符串拆解为数组</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 分割金额字符串</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">parseAmountRange</span>(<span class="params"></span>) &#123;</span><br><span class="line">	<span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">selectedAmountRange</span>) &#123;</span><br><span class="line">		<span class="keyword">const</span> [min, max] = <span class="variable language_">this</span>.<span class="property">selectedAmountRange</span>.<span class="title function_">split</span>(<span class="string">&#x27;-&#x27;</span>).<span class="title function_">map</span>(<span class="function"><span class="params">v</span> =&gt;</span> v === <span class="string">&#x27;null&#x27;</span> ? <span class="literal">null</span> : <span class="title class_">Number</span>(v));</span><br><span class="line">		<span class="variable language_">this</span>.<span class="property">searchModel</span>.<span class="property">paymentAmount</span> = [min, max];</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="variable language_">this</span>.<span class="property">searchModel</span>.<span class="property">paymentAmount</span> = [];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-input%E5%8F%AA%E8%83%BD%E8%BE%93%E5%85%A5%E6%95%B0%E5%AD%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-input%E5%8F%AA%E8%83%BD%E8%BE%93%E5%85%A5%E6%95%B0%E5%AD%97/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:30:35" itemprop="dateCreated datePublished" datetime="2025-06-19T14:30:35+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="element-ui中"><a href="#element-ui中" class="headerlink" title="element-ui中"></a>element-ui中</h1><ul>
+<li>让input只能输入数值的正则判断</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 组件</span><br><span class="line"><span class="tag">&lt;<span class="name">el-form-item</span> <span class="attr">label</span>=<span class="string">&quot;认款金额：&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-input</span> <span class="attr">class</span>=<span class="string">&quot;fontsize&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;dialogForm.subscriptionAmount&quot;</span></span></span><br><span class="line"><span class="tag">		<span class="attr">style</span>=<span class="string">&quot;width: 180px;&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;请输入认款金额&quot;</span></span></span><br><span class="line"><span class="tag">		@<span class="attr">input.native</span>=<span class="string">&quot;handleInput2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">el-input</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-form-item</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// js</span></span><br><span class="line"><span class="title function_">handleInput2</span>(<span class="params">event</span>) &#123;</span><br><span class="line">	<span class="keyword">const</span> val = event.<span class="property">target</span>.<span class="property">value</span>.<span class="title function_">replace</span>(<span class="regexp">/[^\d.-]/g</span>, <span class="string">&#x27;&#x27;</span>);</span><br><span class="line">	<span class="variable language_">this</span>.<span class="property">dialogForm</span>.<span class="property">subscriptionAmount</span> = val;</span><br><span class="line">	<span class="comment">// 强制同步到input框中（重要）</span></span><br><span class="line">	event.<span class="property">target</span>.<span class="property">value</span> = val;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-%E5%89%8D%E7%AB%AF%E8%AF%B7%E6%B1%82%E8%A7%84%E8%8C%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-%E5%89%8D%E7%AB%AF%E8%AF%B7%E6%B1%82%E8%A7%84%E8%8C%83/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:29:21" itemprop="dateCreated datePublished" datetime="2025-06-19T14:29:21+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="前端请求"><a href="#前端请求" class="headerlink" title="前端请求"></a>前端请求</h1><ul>
+<li>在概念上，post与get请求的参数命名是有区别的</li>
+<li>post参数应该为data，而get请求参数应该为param</li>
+<li>这个代码是拷贝自中台项目，它在拦截器request.js中对参数进行了包装，所以入参时没有包{}</li>
+</ul>
+<h2 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ***.js</span></span><br><span class="line"><span class="title function_">addPersonalInfo</span>(<span class="params">data</span>) &#123;</span><br><span class="line">	<span class="keyword">return</span> http.<span class="title function_">post</span>(<span class="string">&quot;/api/paPersonalConfig/addPersonalInfo&quot;</span>, data)</span><br><span class="line">&#125;,</span><br><span class="line"><span class="comment">// ***.vue</span></span><br><span class="line"><span class="keyword">const</span> res = <span class="keyword">await</span> paymentReviewApi.<span class="title function_">addPersonalInfo</span>(<span class="variable language_">this</span>.<span class="property">editForm</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping(&quot;/addPersonalInfo&quot;)</span>  </span><br><span class="line"><span class="keyword">public</span> Result&lt;String&gt; <span class="title function_">addPersonalInfo</span><span class="params">(<span class="meta">@RequestBody</span> <span class="meta">@Valid</span> PersonalInfoConfigCreateVO vo)</span>&#123;  </span><br><span class="line">    <span class="type">PaPersonalConfigDTO</span> <span class="variable">dto</span> <span class="operator">=</span> personalInfoConfigConverter.toDTO(vo);  </span><br><span class="line">    personalInfoConfigService.createPersonalInfoConfig(dto);  </span><br><span class="line">    <span class="keyword">return</span> Result.ok(<span class="string">&quot;创建成功&quot;</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ***.js</span></span><br><span class="line"><span class="title function_">checkUniqueness</span>(<span class="params"> param </span>)&#123;</span><br><span class="line">	<span class="comment">// 这里因为拦截请求给参数已经包了一层&#123;&#125;，所以这里定义的param不再加&#123;&#125;</span></span><br><span class="line">	<span class="keyword">return</span> http.<span class="title function_">get</span>(<span class="string">&quot;/api/paBusinessTypeConfig/checkUnique&quot;</span>, param)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ***.vue</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">checkUniqueness</span>(<span class="params"></span>) &#123;</span><br><span class="line">	<span class="keyword">const</span> value = <span class="variable language_">this</span>.<span class="property">editForm</span>.<span class="property">classCoding</span>.<span class="title function_">trim</span>();</span><br><span class="line">	<span class="keyword">if</span> (!value) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">let</span> param = &#123; <span class="attr">inputValue</span>: value &#125;; <span class="comment">// 封装为对象</span></span><br><span class="line">	<span class="keyword">let</span> res = <span class="keyword">await</span> paymentReviewApi.<span class="title function_">checkUniqueness</span>(param);</span><br><span class="line">	<span class="keyword">return</span> !(res.<span class="property">success</span> &amp;&amp; res.<span class="property">data</span> === <span class="literal">true</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@GetMapping(&quot;/checkUnique&quot;)</span>  </span><br><span class="line"><span class="keyword">public</span> Result&lt;Boolean&gt; <span class="title function_">checkUnique</span><span class="params">(<span class="meta">@RequestParam</span> String inputValue)</span>&#123;  </span><br><span class="line">    System.out.println(inputValue);  </span><br><span class="line">    <span class="type">boolean</span> <span class="variable">exists</span> <span class="operator">=</span> paBusinessConfigService.checkExists(inputValue);  </span><br><span class="line">    <span class="keyword">return</span> Result.ok(!exists);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-js%E4%B8%ADCRUD%E5%87%BD%E6%95%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-js%E4%B8%ADCRUD%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:28:46" itemprop="dateCreated datePublished" datetime="2025-06-19T14:28:46+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="查询模板"><a href="#查询模板" class="headerlink" title="查询模板"></a>查询模板</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 查询收款人列表</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">getPersonalInfoList</span>(<span class="params"></span>)&#123;</span><br><span class="line">	<span class="keyword">let</span> res = <span class="keyword">await</span> xxxxxxxxApi.<span class="title function_">getPersonalInfoList</span>();</span><br><span class="line">	<span class="keyword">if</span>(res.<span class="property">success</span>)&#123;</span><br><span class="line">		<span class="variable language_">this</span>.<span class="property">tableData</span> = res.<span class="property">data</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="variable language_">this</span>.$message(&#123;</span><br><span class="line">			<span class="attr">type</span>: <span class="string">&#x27;error&#x27;</span>,</span><br><span class="line">			<span class="attr">message</span>: res.<span class="property">message</span></span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="delete模板"><a href="#delete模板" class="headerlink" title="delete模板"></a>delete模板</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="title function_">deleteRow</span>(<span class="params">row</span>) &#123;</span><br><span class="line">	<span class="variable language_">this</span>.$confirm(<span class="string">&#x27;确定要删除该数据吗?&#x27;</span>, <span class="string">&#x27;提示&#x27;</span>, &#123;</span><br><span class="line">		<span class="attr">confirmButtonText</span>: <span class="string">&#x27;确定&#x27;</span>,</span><br><span class="line">		<span class="attr">cancelButtonText</span>: <span class="string">&#x27;取消&#x27;</span>,</span><br><span class="line">		<span class="attr">type</span>: <span class="string">&#x27;warning&#x27;</span></span><br><span class="line">	&#125;).<span class="title function_">then</span>(<span class="title function_">async</span> () =&gt; &#123;</span><br><span class="line">		<span class="comment">// 确认删除</span></span><br><span class="line">		<span class="keyword">let</span> res = <span class="keyword">await</span> xxxxxxApi.<span class="title function_">delete</span>(row.<span class="property">id</span>);</span><br><span class="line">		<span class="keyword">if</span> (res.<span class="property">success</span>) &#123;</span><br><span class="line">			<span class="variable language_">this</span>.$message(&#123;</span><br><span class="line">				<span class="attr">type</span>: <span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">				<span class="attr">message</span>: <span class="string">&#x27;删除成功!&#x27;</span></span><br><span class="line">			&#125;);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="variable language_">this</span>.<span class="title function_">getList</span>();</span><br><span class="line">	&#125;).<span class="title function_">catch</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">		<span class="comment">// 点击取消</span></span><br><span class="line">		<span class="variable language_">this</span>.$message(&#123;</span><br><span class="line">			<span class="attr">type</span>: <span class="string">&#x27;info&#x27;</span>,</span><br><span class="line">			<span class="attr">message</span>: <span class="string">&#x27;已取消删除&#x27;</span></span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<h1 id="新增或编辑更新模板"><a href="#新增或编辑更新模板" class="headerlink" title="新增或编辑更新模板"></a>新增或编辑更新模板</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line"><span class="keyword">async</span> <span class="title function_">submitEdit</span>(<span class="params"></span>) &#123;  </span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">dialogLoading</span> = <span class="literal">true</span>;  </span><br><span class="line">    <span class="comment">// 表单校验  </span></span><br><span class="line">    <span class="keyword">if</span> (!<span class="variable language_">this</span>.<span class="title function_">dataCheck</span>()) &#123;  </span><br><span class="line">        <span class="variable language_">this</span>.$message(&#123;  </span><br><span class="line">                <span class="attr">type</span>: <span class="string">&#x27;error&#x27;</span>,  </span><br><span class="line">                <span class="attr">message</span>: <span class="string">&#x27;请填写完整信息&#x27;</span>  </span><br><span class="line">            &#125;);  </span><br><span class="line">        <span class="keyword">return</span>;    &#125;  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;  </span><br><span class="line">		<span class="comment">// 补全数据</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">editForm</span>.<span class="property">payeeName</span> = <span class="variable language_">this</span>.<span class="property">receiverList</span>.<span class="title function_">find</span>(<span class="function"><span class="params">item</span> =&gt;</span> item.<span class="property">id</span> === <span class="variable language_">this</span>.<span class="property">editForm</span>.<span class="property">payeeId</span>).<span class="property">realName</span>;  </span><br><span class="line">        <span class="comment">// console.log(&#x27;提交的数据： &#x27;, this.editForm)  </span></span><br><span class="line">        <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">mode</span> === <span class="string">&#x27;create&#x27;</span>)&#123;  </span><br><span class="line">            <span class="keyword">const</span> res = <span class="keyword">await</span> xxxxxxxxxApi.<span class="title function_">addPersonalInfo</span>(<span class="variable language_">this</span>.<span class="property">editForm</span>);  </span><br><span class="line">            <span class="keyword">if</span> (res.<span class="property">success</span>) &#123;  </span><br><span class="line">                <span class="variable language_">this</span>.$message(&#123;  </span><br><span class="line">                        <span class="attr">type</span>: <span class="string">&#x27;success&#x27;</span>,  </span><br><span class="line">                        <span class="attr">message</span>: <span class="string">&#x27;保存成功&#x27;</span>  </span><br><span class="line">                    &#125;);  </span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;  </span><br><span class="line">                <span class="variable language_">this</span>.$message(&#123;  </span><br><span class="line">                        <span class="attr">type</span>: <span class="string">&#x27;error&#x27;</span>,  </span><br><span class="line">                        <span class="attr">message</span>: res.<span class="property">message</span>  </span><br><span class="line">                    &#125;);  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">mode</span> === <span class="string">&#x27;edit&#x27;</span>)&#123;  </span><br><span class="line">            <span class="keyword">const</span> res = <span class="keyword">await</span> xxxxxxxxxxApi.<span class="title function_">updatePersonalInfo</span>(<span class="variable language_">this</span>.<span class="property">editForm</span>);  </span><br><span class="line">            <span class="keyword">if</span> (res.<span class="property">success</span>) &#123;  </span><br><span class="line">                <span class="variable language_">this</span>.$message(&#123;  </span><br><span class="line">                        <span class="attr">type</span>: <span class="string">&#x27;success&#x27;</span>,  </span><br><span class="line">                        <span class="attr">message</span>: <span class="string">&#x27;保存成功&#x27;</span>  </span><br><span class="line">                    &#125;);  </span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;  </span><br><span class="line">                <span class="variable language_">this</span>.$message(&#123;  </span><br><span class="line">                        <span class="attr">type</span>: <span class="string">&#x27;error&#x27;</span>,  </span><br><span class="line">                        <span class="attr">message</span>: res.<span class="property">message</span>  </span><br><span class="line">                    &#125;)  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125; <span class="keyword">catch</span> (e) &#123;  </span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(e)  </span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;  </span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">dialogLoading</span> = <span class="literal">false</span>;  </span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">getPersonalInfoList</span>();  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">dialogFormVisible</span> = <span class="literal">false</span>;  </span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-vue2%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-vue2%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:27:38" itemprop="dateCreated datePublished" datetime="2025-06-19T14:27:38+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">├── controller  </span><br><span class="line">│   └── OrderController.java  </span><br><span class="line">├── service  </span><br><span class="line">│   ├── OrderService.java  </span><br><span class="line">│   └── impl/OrderServiceImpl.java  </span><br><span class="line">├── mapper  </span><br><span class="line">│   ├── OrderMapper.java  </span><br><span class="line">├── model  </span><br><span class="line">│   ├── dto/OrderPageDTO.java  </span><br><span class="line">│   ├── vo/OrderRespVO.java  </span><br><span class="line">│   └── entity/Order.java  </span><br><span class="line">├── converter  </span><br><span class="line">│   └── OrderConverter.java</span><br></pre></td></tr></table></figure>
+
+<h1 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h1><h2 id="DTO"><a href="#DTO" class="headerlink" title="DTO"></a>DTO</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OrderPageDTO</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span> Integer pageNum;  </span><br><span class="line">    <span class="keyword">private</span> Integer pageSize;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> String orderNo;  </span><br><span class="line">    <span class="keyword">private</span> String customerName;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> LocalDateTime startTime;  </span><br><span class="line">    <span class="keyword">private</span> LocalDateTime endTime;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> BigDecimal minAmount;  </span><br><span class="line">    <span class="keyword">private</span> BigDecimal maxAmount;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Entity"><a href="#Entity" class="headerlink" title="Entity"></a>Entity</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span>  </span><br><span class="line"><span class="meta">@TableName(&quot;t_order&quot;)</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Order</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span> Long id;  </span><br><span class="line">    <span class="keyword">private</span> String orderNo;  </span><br><span class="line">    <span class="keyword">private</span> String customerName;  </span><br><span class="line">    <span class="keyword">private</span> LocalDateTime createTime;  </span><br><span class="line">    <span class="keyword">private</span> BigDecimal totalAmount;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="VO"><a href="#VO" class="headerlink" title="VO"></a>VO</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OrderRespVO</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span> Long id;  </span><br><span class="line">    <span class="keyword">private</span> String orderNo;  </span><br><span class="line">    <span class="keyword">private</span> String customerName;  </span><br><span class="line">    <span class="keyword">private</span> LocalDateTime createTime;  </span><br><span class="line">    <span class="keyword">private</span> BigDecimal totalAmount;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Converter"><a href="#Converter" class="headerlink" title="Converter"></a>Converter</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OrderConverter</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> OrderRespVO <span class="title function_">toRespVO</span><span class="params">(Order entity)</span> &#123;  </span><br><span class="line">        <span class="keyword">if</span> (entity == <span class="literal">null</span>) <span class="keyword">return</span> <span class="literal">null</span>;  </span><br><span class="line">        <span class="type">OrderRespVO</span> <span class="variable">vo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">OrderRespVO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(entity, vo);  </span><br><span class="line">        <span class="keyword">return</span> vo;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Mapper"><a href="#Mapper" class="headerlink" title="Mapper"></a>Mapper</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Mapper</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">OrderMapper</span> <span class="keyword">extends</span> <span class="title class_">BaseMapper</span>&lt;Order&gt;&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">OrderService</span> &#123;</span><br><span class="line">	IPage&lt;OrderRespVO&gt; <span class="title function_">page</span><span class="params">(OrderPageDTO dto)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="IMPL"><a href="#IMPL" class="headerlink" title="IMPL"></a>IMPL</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Service</span>  </span><br><span class="line"><span class="meta">@RequiredArgsConstructor</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OrderServiceImpl</span> <span class="keyword">implements</span> <span class="title class_">OrderService</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> OrderMapper orderMapper;  </span><br><span class="line">    <span class="meta">@Override</span>  </span><br><span class="line">    <span class="keyword">public</span> IPage&lt;OrderRespVO&gt; <span class="title function_">page</span><span class="params">(OrderPageDTO dto)</span> &#123;  </span><br><span class="line">        Page&lt;Order&gt; page = <span class="keyword">new</span> <span class="title class_">Page</span>&lt;&gt;(dto.getPageNum(), dto.getPageSize());  </span><br><span class="line">  </span><br><span class="line">        LambdaQueryWrapper&lt;Order&gt; wrapper = <span class="keyword">new</span> <span class="title class_">LambdaQueryWrapper</span>&lt;&gt;();  </span><br><span class="line">        wrapper.like(StringUtils.isNotBlank(dto.getOrderNo()), Order::getOrderNo, dto.getOrderNo());  </span><br><span class="line">        wrapper.like(StringUtils.isNotBlank(dto.getCustomerName()), Order::getCustomerName, dto.getCustomerName());  </span><br><span class="line">        wrapper.ge(dto.getStartTime() != <span class="literal">null</span>, Order::getCreateTime, dto.getStartTime());  </span><br><span class="line">        wrapper.le(dto.getEndTime() != <span class="literal">null</span>, Order::getCreateTime, dto.getEndTime());  </span><br><span class="line">        wrapper.ge(dto.getMinAmount() != <span class="literal">null</span>, Order::getTotalAmount, dto.getMinAmount());  </span><br><span class="line">        wrapper.le(dto.getMaxAmount() != <span class="literal">null</span>, Order::getTotalAmount, dto.getMaxAmount());  </span><br><span class="line">  </span><br><span class="line">        IPage&lt;Order&gt; resultPage = orderMapper.selectPage(page, wrapper);  </span><br><span class="line">        <span class="keyword">return</span> resultPage.convert(OrderConverter::toRespVO);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Controller"><a href="#Controller" class="headerlink" title="Controller"></a>Controller</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span>  </span><br><span class="line"><span class="meta">@RequestMapping(&quot;/api/order&quot;)</span>  </span><br><span class="line"><span class="meta">@RequiredArgsConstructor</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OrderController</span> &#123;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> OrderService orderService;  </span><br><span class="line">  </span><br><span class="line">    <span class="meta">@GetMapping(&quot;/page&quot;)</span>  </span><br><span class="line">    <span class="keyword">public</span> Result&lt;IPage&lt;OrderRespVO&gt;&gt; <span class="title function_">getOrderPage</span><span class="params">(OrderPageDTO dto)</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> Result.success(orderService.page(dto));  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="前端参数结构-请求方式"><a href="#前端参数结构-请求方式" class="headerlink" title="前端参数结构&amp;请求方式"></a>前端参数结构&amp;请求方式</h1><h2 id="参数结构-与dto对应"><a href="#参数结构-与dto对应" class="headerlink" title="参数结构 与dto对应"></a>参数结构 与dto对应</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">data</span>(<span class="params"></span>) &#123;  </span><br><span class="line">  <span class="keyword">return</span> &#123;  </span><br><span class="line">    <span class="attr">queryParams</span>: &#123;  </span><br><span class="line">      <span class="attr">pageNum</span>: <span class="number">1</span>,  </span><br><span class="line">      <span class="attr">pageSize</span>: <span class="number">10</span>,  </span><br><span class="line">      <span class="attr">orderNo</span>: <span class="string">&#x27;&#x27;</span>,              <span class="comment">// 模糊查询  </span></span><br><span class="line">      <span class="attr">customerName</span>: <span class="string">&#x27;&#x27;</span>,         <span class="comment">// 模糊查询  </span></span><br><span class="line">      <span class="attr">startTime</span>: <span class="string">&#x27;&#x27;</span>,            <span class="comment">// 开始时间（yyyy-MM-dd HH:mm:ss）  </span></span><br><span class="line">      <span class="attr">endTime</span>: <span class="string">&#x27;&#x27;</span>,              <span class="comment">// 结束时间  </span></span><br><span class="line">      <span class="attr">minAmount</span>: <span class="string">&#x27;&#x27;</span>,            <span class="comment">// 金额范围：最小值  </span></span><br><span class="line">      <span class="attr">maxAmount</span>: <span class="string">&#x27;&#x27;</span>,            <span class="comment">// 金额范围：最大值  </span></span><br><span class="line">    &#125;,  </span><br><span class="line">    <span class="attr">orderList</span>: [],  </span><br><span class="line">    <span class="attr">total</span>: <span class="number">0</span>  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="请求方式-以axios为例"><a href="#请求方式-以axios为例" class="headerlink" title="请求方式 以axios为例"></a>请求方式 以axios为例</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">methods</span>: &#123;  </span><br><span class="line">  <span class="title function_">fetchOrderList</span>(<span class="params"></span>) &#123;  </span><br><span class="line">    axios.<span class="title function_">get</span>(<span class="string">&#x27;/api/order/page&#x27;</span>, &#123;  </span><br><span class="line">      <span class="attr">params</span>: <span class="variable language_">this</span>.<span class="property">queryParams</span>  </span><br><span class="line">    &#125;).<span class="title function_">then</span>(<span class="function"><span class="params">res</span> =&gt;</span> &#123;  </span><br><span class="line">      <span class="keyword">if</span> (res.<span class="property">data</span>.<span class="property">code</span> === <span class="number">0</span>) &#123;  </span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">orderList</span> = res.<span class="property">data</span>.<span class="property">data</span>.<span class="property">records</span>  </span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">total</span> = res.<span class="property">data</span>.<span class="property">data</span>.<span class="property">total</span>  </span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;  </span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">$message</span>.<span class="title function_">error</span>(res.<span class="property">data</span>.<span class="property">message</span> || <span class="string">&#x27;获取订单列表失败&#x27;</span>)  </span><br><span class="line">      &#125;  </span><br><span class="line">    &#125;).<span class="title function_">catch</span>(<span class="function">() =&gt;</span> &#123;  </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">$message</span>.<span class="title function_">error</span>(<span class="string">&#x27;网络错误&#x27;</span>)  </span><br><span class="line">    &#125;)  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="分页器-ElementUI"><a href="#分页器-ElementUI" class="headerlink" title="分页器(ElementUI)"></a>分页器(ElementUI)</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-pagination</span>  </span></span><br><span class="line"><span class="tag">  <span class="attr">background</span>  </span></span><br><span class="line"><span class="tag">  <span class="attr">layout</span>=<span class="string">&quot;total, prev, pager, next, jumper&quot;</span>  </span></span><br><span class="line"><span class="tag">  <span class="attr">:current-page.sync</span>=<span class="string">&quot;queryParams.pageNum&quot;</span>  </span></span><br><span class="line"><span class="tag">  <span class="attr">:page-size.sync</span>=<span class="string">&quot;queryParams.pageSize&quot;</span>  </span></span><br><span class="line"><span class="tag">  <span class="attr">:total</span>=<span class="string">&quot;total&quot;</span>  </span></span><br><span class="line"><span class="tag">  @<span class="attr">current-change</span>=<span class="string">&quot;fetchOrderList&quot;</span>  </span></span><br><span class="line"><span class="tag">  @<span class="attr">size-change</span>=<span class="string">&quot;fetchOrderList&quot;</span>  </span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">data</span>(<span class="params"></span>) &#123;  </span><br><span class="line">  <span class="keyword">return</span> &#123;  </span><br><span class="line">    <span class="attr">timeRange</span>: []  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;,  </span><br><span class="line"><span class="attr">methods</span>: &#123;  </span><br><span class="line">  <span class="title function_">handleTimeRangeChange</span>(<span class="params">val</span>) &#123;  </span><br><span class="line">    <span class="keyword">if</span> (val &amp;&amp; val.<span class="property">length</span> === <span class="number">2</span>) &#123;  </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">queryParams</span>.<span class="property">startTime</span> = val[<span class="number">0</span>] + <span class="string">&#x27; 00:00:00&#x27;</span>  </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">queryParams</span>.<span class="property">endTime</span> = val[<span class="number">1</span>] + <span class="string">&#x27; 23:59:59&#x27;</span>  </span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;  </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">queryParams</span>.<span class="property">startTime</span> = <span class="string">&#x27;&#x27;</span>  </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">queryParams</span>.<span class="property">endTime</span> = <span class="string">&#x27;&#x27;</span>  </span><br><span class="line">    &#125;  </span><br><span class="line">  &#125;,  </span><br><span class="line">  <span class="title function_">resetQuery</span>(<span class="params"></span>) &#123;  </span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">queryParams</span> = &#123;  </span><br><span class="line">      <span class="attr">pageNum</span>: <span class="number">1</span>,  </span><br><span class="line">      <span class="attr">pageSize</span>: <span class="number">10</span>,  </span><br><span class="line">      <span class="attr">orderNo</span>: <span class="string">&#x27;&#x27;</span>,  </span><br><span class="line">      <span class="attr">customerName</span>: <span class="string">&#x27;&#x27;</span>,  </span><br><span class="line">      <span class="attr">startTime</span>: <span class="string">&#x27;&#x27;</span>,  </span><br><span class="line">      <span class="attr">endTime</span>: <span class="string">&#x27;&#x27;</span>,  </span><br><span class="line">      <span class="attr">minAmount</span>: <span class="string">&#x27;&#x27;</span>,  </span><br><span class="line">      <span class="attr">maxAmount</span>: <span class="string">&#x27;&#x27;</span>  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">timeRange</span> = []  </span><br><span class="line">    <span class="variable language_">this</span>.<span class="title function_">fetchOrderList</span>()  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-java%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6%E5%B0%81%E8%A3%85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-java%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6%E5%B0%81%E8%A3%85/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:26:53" itemprop="dateCreated datePublished" datetime="2025-06-19T14:26:53+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="条件封装模板"><a href="#条件封装模板" class="headerlink" title="条件封装模板"></a>条件封装模板</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> QueryWrapper&lt;Entity&gt; <span class="title function_">buildQueryWrapper</span><span class="params">(QueryVO query)</span> &#123;  </span><br><span class="line">    QueryWrapper&lt;Entity&gt; wrapper = <span class="keyword">new</span> <span class="title class_">QueryWrapper</span>&lt;&gt;();  </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 精准匹配字段  </span></span><br><span class="line">    <span class="keyword">if</span> (StringUtils.isNotBlank(query.getStatus())) &#123;  </span><br><span class="line">        wrapper.eq(<span class="string">&quot;status&quot;</span>, query.getStatus());  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 模糊搜索  </span></span><br><span class="line">    <span class="keyword">if</span> (StringUtils.isNotBlank(query.getKeyword())) &#123;  </span><br><span class="line">        wrapper.and(w -&gt;   </span><br><span class="line">            w.like(<span class="string">&quot;title&quot;</span>, query.getKeyword())  </span><br><span class="line">             .or()  </span><br><span class="line">             .like(<span class="string">&quot;description&quot;</span>, query.getKeyword())  </span><br><span class="line">        );  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 日期范围（注意时间为空情况）  </span></span><br><span class="line">    <span class="keyword">if</span> (query.getStartTime() != <span class="literal">null</span>) &#123;  </span><br><span class="line">        wrapper.ge(<span class="string">&quot;create_time&quot;</span>, query.getStartTime());  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">if</span> (query.getEndTime() != <span class="literal">null</span>) &#123;  </span><br><span class="line">        wrapper.le(<span class="string">&quot;create_time&quot;</span>, query.getEndTime());  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 数值范围  </span></span><br><span class="line">    <span class="keyword">if</span> (query.getMinAmount() != <span class="literal">null</span>) &#123;  </span><br><span class="line">        wrapper.ge(<span class="string">&quot;amount&quot;</span>, query.getMinAmount());  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">if</span> (query.getMaxAmount() != <span class="literal">null</span>) &#123;  </span><br><span class="line">        wrapper.le(<span class="string">&quot;amount&quot;</span>, query.getMaxAmount());  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 排序（可选）  </span></span><br><span class="line">    wrapper.orderByDesc(<span class="string">&quot;create_time&quot;</span>);  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">return</span> wrapper;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-java%E8%BD%AC%E6%8D%A2%E7%B1%BBconverter/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-java%E8%BD%AC%E6%8D%A2%E7%B1%BBconverter/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:26:01" itemprop="dateCreated datePublished" datetime="2025-06-19T14:26:01+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><ul>
+<li>比较重要的是  如果要使用BeanUtils.copyProperties(a , b)，字段要对应上，而且copyProperties不能拷list，得拆开一个一个拷。</li>
+<li>如果字段名写成不一样，需要手动get&#x2F;set</li>
+</ul>
+<h1 id="vo、dto、entity转换类demo"><a href="#vo、dto、entity转换类demo" class="headerlink" title="vo、dto、entity转换类demo"></a>vo、dto、entity转换类demo</h1><ul>
+<li>前提是转换间字段要能匹配上，定义的一样</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PersonalInfoConfigConverter</span> &#123;  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfigDTO <span class="title function_">toDTO</span><span class="params">(PersonalInfoConfigCreateVO vo)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfigDTO</span> <span class="variable">dto</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigDTO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(vo,dto);  </span><br><span class="line">        <span class="keyword">return</span> dto;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfigDTO <span class="title function_">toDTO</span><span class="params">(PersonalInfoConfigUpdateVO vo)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfigDTO</span> <span class="variable">dto</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigDTO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(vo,dto);  </span><br><span class="line">        <span class="keyword">return</span> dto;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfigRespVO <span class="title function_">toVO</span><span class="params">(PersonalInfoConfigDTO dto)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfigRespVO</span> <span class="variable">vo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigRespVO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(dto,vo);  </span><br><span class="line">        <span class="keyword">return</span> vo;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfig <span class="title function_">toEntity</span><span class="params">(PersonalInfoConfigDTO dto)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfig</span> <span class="variable">entity</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfig</span>();  </span><br><span class="line">        BeanUtils.copyProperties(dto,entity);  </span><br><span class="line">        <span class="keyword">return</span> entity;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfigDTO <span class="title function_">toDTO</span><span class="params">(PersonalInfoConfig entity)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfigDTO</span> <span class="variable">dto</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigDTO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(entity,dto);  </span><br><span class="line">        <span class="keyword">return</span> dto;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> PersonalInfoConfigRespVO <span class="title function_">toRespVO</span><span class="params">(PersonalInfoConfigDTO dto)</span>&#123;  </span><br><span class="line">        <span class="keyword">if</span>(dto == <span class="literal">null</span> )<span class="keyword">return</span> <span class="literal">null</span>;  </span><br><span class="line">        <span class="type">PersonalInfoConfigRespVO</span> <span class="variable">vo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigRespVO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(dto,vo);  </span><br><span class="line">        <span class="keyword">return</span> vo;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> List&lt;PersonalInfoConfigRespVO&gt; <span class="title function_">toRespVOList</span><span class="params">(List&lt;PersonalInfoConfigDTO&gt; dtoList)</span>&#123;  </span><br><span class="line">        <span class="keyword">if</span>(dtoList == <span class="literal">null</span> || dtoList.isEmpty())<span class="keyword">return</span> Collections.emptyList();  </span><br><span class="line">        <span class="keyword">return</span> dtoList.stream()  </span><br><span class="line">                .map(PersonalInfoConfigConverter::toRespVO)  </span><br><span class="line">                .collect(Collectors.toList());  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="DTO-VO-List的转换"><a href="#DTO-VO-List的转换" class="headerlink" title="DTO VO  List的转换"></a>DTO VO  List的转换</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 错误示例</span></span><br><span class="line"><span class="meta">@GetMapping(&quot;/fundList&quot;)</span>  </span><br><span class="line">Result&lt;List&lt;ItemWithDetailRespVO&gt;&gt; <span class="title function_">getFundList</span><span class="params">()</span>&#123;  </span><br><span class="line">    List&lt;ItemWithDetailDTO&gt; dtoList = paExpenseConfigService.getFundList();  </span><br><span class="line">    List&lt;ItemWithDetailRespVO&gt; voList = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();  </span><br><span class="line">    BeanUtils.copyProperties(dtoList,voList);  </span><br><span class="line">    <span class="keyword">return</span> Result.ok(voList);  </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// BeanUtils.copyProperties(Object source,Object target)的设计本意是</span></span><br><span class="line">BeanUtils.copyProperties(sourceBean,targetBean);</span><br><span class="line"><span class="comment">// 但是在这里，这样写是无效的</span></span><br><span class="line">BeanUtils.copyProperties(List&lt;DTO&gt;,List&lt;VO&gt;);</span><br><span class="line"><span class="comment">// 它不会作任何元素级别的复制，只会尝试把source(List)中的属性赋值给target(List)，但这些容器类型并没有字段匹配，所以结果是空的。</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 正确操作</span></span><br><span class="line"><span class="meta">@GetMapping(&quot;/fundList&quot;)</span>  </span><br><span class="line">Result&lt;List&lt;ItemWithDetailRespVO&gt;&gt; <span class="title function_">getFundList</span><span class="params">()</span>&#123;  </span><br><span class="line">    List&lt;ItemWithDetailDTO&gt; dtoList = paExpenseConfigService.getFundList();  </span><br><span class="line">    List&lt;ItemWithDetailRespVO&gt; voList = dtoList.stream()  </span><br><span class="line">            .map(dto -&gt; &#123;  </span><br><span class="line">                <span class="type">ItemWithDetailRespVO</span> <span class="variable">vo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ItemWithDetailRespVO</span>();  </span><br><span class="line">                BeanUtils.copyProperties(dto,vo);  </span><br><span class="line">                <span class="keyword">return</span> vo;  </span><br><span class="line">            &#125;).collect(Collectors.toList());  </span><br><span class="line">    <span class="keyword">return</span> Result.ok(voList);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-%E5%AF%BC%E5%87%BA%E5%88%97%E8%A1%A8%E4%B8%BAexcel%E6%96%87%E4%BB%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-%E5%AF%BC%E5%87%BA%E5%88%97%E8%A1%A8%E4%B8%BAexcel%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:24:44" itemprop="dateCreated datePublished" datetime="2025-06-19T14:24:44+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h1><ul>
+<li>中台项目中</li>
+<li>由于前端拦截器里封装了请求，只能选择使用封装后的请求，否则会没有数据</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// xxx.js请求</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">exportSpecialCollection</span>(<span class="params">param</span>) &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">await</span> http.<span class="title function_">getDown</span>(<span class="string">&quot;/api/specialCollection/export&quot;</span>, param, <span class="string">&#x27;blob&#x27;</span>);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>调用方法可以直接按照下面的方式</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 导出方法</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">handleExport</span>(<span class="params"></span>) &#123;</span><br><span class="line">	<span class="variable language_">this</span>.<span class="property">exportLoading</span> = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">let</span> params = &#123;</span><br><span class="line">		...<span class="variable language_">this</span>.<span class="property">searchModel</span>,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">try</span> &#123;</span><br><span class="line">		<span class="variable language_">this</span>.<span class="property">$modal</span>.<span class="title function_">confirm</span>(<span class="string">&#x27;是否确认导出数据项？&#x27;</span>).<span class="title function_">then</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">			<span class="keyword">return</span> paymentReviewApi.<span class="title function_">exportApplyRecords</span>(params);</span><br><span class="line">		&#125;).<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">			<span class="variable language_">this</span>.<span class="property">$download</span>.<span class="title function_">excel</span>(response, <span class="string">&#x27;付款审核.xlsx&#x27;</span>);</span><br><span class="line">		&#125;)</span><br><span class="line">	&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">		<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;导出失败&quot;</span>,error);</span><br><span class="line">		<span class="variable language_">this</span>.<span class="property">$message</span>.<span class="title function_">error</span>(<span class="string">&#x27;导出失败，请稍后再试&#x27;</span>)</span><br><span class="line">	&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">		<span class="variable language_">this</span>.<span class="property">exportLoading</span> = <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<h1 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h1><ul>
+<li>使用了EasyExcel，后端对EasyExcel进行了封装，调用封装后的方法，如果有一些字段匹配不上，需要手动直接匹配，需要进行判空，可能会出错</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// service</span></span><br><span class="line"><span class="comment">/**  </span></span><br><span class="line"><span class="comment"> * 导出明细Excel  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> query 条件参数  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span>  excelVOList  </span></span><br><span class="line"><span class="comment"> */</span><span class="meta">@Override</span>  </span><br><span class="line"><span class="keyword">public</span> List&lt;PaApplyRecordsExportExcelVO&gt; <span class="title function_">exportApplyRecords</span><span class="params">(ApplyQueryDTO query)</span>&#123;  </span><br><span class="line">    List&lt;PaApplyRecordsRespVO&gt; result = paApplyRecordsMapper.selectDetailPage(query);  </span><br><span class="line">    Map&lt;Integer,String&gt; statusMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();  </span><br><span class="line">    statusMap.put(<span class="number">0</span>,<span class="string">&quot;待提交&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">1</span>,<span class="string">&quot;待部门负责人审批&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">2</span>,<span class="string">&quot;待财务负责人审批&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">3</span>,<span class="string">&quot;待总经理审批&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">4</span>,<span class="string">&quot;待支付&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">5</span>,<span class="string">&quot;已支付&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">6</span>,<span class="string">&quot;审批未通过&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">7</span>,<span class="string">&quot;已取消&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">8</span>,<span class="string">&quot;已关闭&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">9</span>,<span class="string">&quot;已归档&quot;</span>);  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">return</span> result.stream().map(item -&gt; &#123;  </span><br><span class="line">        <span class="type">PaApplyRecordsExportExcelVO</span> <span class="variable">vo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PaApplyRecordsExportExcelVO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(item,vo);  </span><br><span class="line">        <span class="keyword">if</span>(item.getApplyStatus()!=<span class="literal">null</span>)&#123;  </span><br><span class="line">            vo.setApplyStatus(statusMap.get(item.getApplyStatus()));  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span>(item.getApplyTime()!=<span class="literal">null</span>)&#123;  vo.setApplyTime(Date.from(item.getApplyTime().atZone(ZoneId.systemDefault()).toInstant()));  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span>(item.getPaymentTime()!=<span class="literal">null</span>)&#123;  vo.setPaymentTime(Date.from(item.getPaymentTime().atZone(ZoneId.systemDefault()).toInstant()));  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">return</span> vo;  </span><br><span class="line">    &#125;).collect(Collectors.toList());  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// controller</span></span><br><span class="line"><span class="comment">/**  </span></span><br><span class="line"><span class="comment"> * 返回excel文件流  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> response 响应体  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> query 条件参数  </span></span><br><span class="line"><span class="comment"> */</span>  </span><br><span class="line"><span class="meta">@GetMapping(&quot;/export&quot;)</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">exportApplyRecords</span><span class="params">(HttpServletResponse response, ApplyQueryDTO query)</span>&#123;  </span><br><span class="line">    <span class="keyword">try</span>&#123;  </span><br><span class="line">        <span class="comment">// 1. 设置响应头  </span></span><br><span class="line">        setExcelResponseHeader(response, <span class="string">&quot;用户数据.xlsx&quot;</span>);  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 查询 + 转换数据  </span></span><br><span class="line">        List&lt;PaApplyRecordsExportExcelVO&gt; data = paApplyRecordsService.exportApplyRecords(query);  </span><br><span class="line">  </span><br><span class="line">        ExcelUtils.write(response, <span class="string">&quot;付费明细单.xlsx&quot;</span>, <span class="string">&quot;付费明细单&quot;</span>, PaApplyRecordsExportExcelVO.class, data);  </span><br><span class="line">        System.out.println(<span class="string">&quot;response: &quot;</span>+response);  </span><br><span class="line">    &#125;<span class="keyword">catch</span> (Exception e)&#123;  </span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;导出excel失败&quot;</span>,e);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="comment">/**  </span></span><br><span class="line"><span class="comment"> * 设置Excel下载响应头  </span></span><br><span class="line"><span class="comment"> */</span>  </span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">setExcelResponseHeader</span><span class="params">(HttpServletResponse response, String fileName)</span> <span class="keyword">throws</span> UnsupportedEncodingException &#123;  </span><br><span class="line">    <span class="comment">// 文件名处理，防止中文乱码  </span></span><br><span class="line">    <span class="type">String</span> <span class="variable">encodedFileName</span> <span class="operator">=</span> URLEncoder.encode(fileName, <span class="string">&quot;UTF-8&quot;</span>).replaceAll(<span class="string">&quot;\\+&quot;</span>, <span class="string">&quot;%20&quot;</span>);  </span><br><span class="line">    response.setContentType(<span class="string">&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;</span>);  </span><br><span class="line">    response.setCharacterEncoding(<span class="string">&quot;utf-8&quot;</span>);  </span><br><span class="line">    response.setHeader(<span class="string">&quot;Content-disposition&quot;</span>,<span class="string">&quot;attachment;filename*=utf-8&#x27;&#x27;&quot;</span> + encodedFileName + <span class="string">&quot;.xlsx&quot;</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>按照以上方法，需要考虑具体项目如何定义拦截器的</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/activiti%E5%AE%9E%E6%93%8D%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/activiti%E5%AE%9E%E6%93%8D%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:23:31" itemprop="dateCreated datePublished" datetime="2025-06-19T14:23:31+08:00">2025-06-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="activiti7-实操记录"><a href="#activiti7-实操记录" class="headerlink" title="activiti7 实操记录"></a>activiti7 实操记录</h1><h1 id="清晰几个概念"><a href="#清晰几个概念" class="headerlink" title="清晰几个概念"></a>清晰几个概念</h1><ul>
+<li>流程定义——画bpmn图，定义需要传的参数</li>
+<li>流程部署——写入到数据库中</li>
+<li>流程引擎——负责流程定义、流程部署、流程实例、推进流程、任务分配、流程跳转结束挂起等控制操作，操作流程的主入口。在activiti7中，不需要自己显式的配置流程引擎，这个版本采用了SpringBoot Starter自动装配</li>
+<li>流程实例——绑定你的业务key，启动流程，生成一个流程实例，它会描述你当前业务走到了流程的什么地方。</li>
+<li>任务task——某用户登录后需要处理的事项，由节点分发。</li>
+<li>节点node(不存在于activiti， 是自己理解的概念)，一般一个user task就是一个节点</li>
+<li>事件——标志开始与结束，还有中间事件什么的</li>
+<li>流程变量——写在bpmn图中线与事件上的变量，需要在启动流程时传一些用户定义的（哪些人操作），其它的变量可以在任意任务时处理。也意味着流程中的变量是动态变化的</li>
+<li>流程变量作用域，单开一个章节做笔记</li>
+<li>监听器——可以直接和java代码监听器绑定，从而及时的取值赋值</li>
+</ul>
+<h1 id="一般结构"><a href="#一般结构" class="headerlink" title="一般结构"></a>一般结构</h1><ul>
+<li>一般结构</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">controller</span><br><span class="line">	WorkflowController</span><br><span class="line">service</span><br><span class="line">	WorkflowService</span><br><span class="line">listeners</span><br><span class="line">	TaskListener</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果构建参数比较多，就新建</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">builder</span><br><span class="line">	WorkflowBuilder</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果枚举比较多，就新建</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">constant</span><br><span class="line">	WorkflowConstant	</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>另外比较重要的一点，activiti登录验证，在开发时使用，因为activiti使用的登录用户不是spring管理的登录用户，可能会在开发中访问自己的方法是报错：用户名密码错误，使用loginAs(当前登录人username)  登录————中台项目中，从外事拷的使用SecurityUtil登录，从springSecurity里找是不是有这个登录人然后最后调用activiti引擎再set某参数。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">utils</span><br><span class="line">	SecurityUtil	</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SecurityUtil</span> &#123;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> <span class="type">Logger</span> <span class="variable">logger</span> <span class="operator">=</span> LoggerFactory.getLogger(SecurityUtil.class);  </span><br><span class="line">  </span><br><span class="line">    <span class="meta">@Autowired</span>  </span><br><span class="line">    <span class="keyword">private</span> UserDetailsService userDetailsService;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">logInAs</span><span class="params">(String username)</span> &#123;  </span><br><span class="line">  </span><br><span class="line">        <span class="type">UserDetails</span> <span class="variable">user</span> <span class="operator">=</span> userDetailsService.loadUserByUsername(username);  </span><br><span class="line">        <span class="keyword">if</span> (user == <span class="literal">null</span>) &#123;  </span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">IllegalStateException</span>(<span class="string">&quot;User &quot;</span> + username + <span class="string">&quot; doesn&#x27;t exist, please provide a valid user&quot;</span>);  </span><br><span class="line">        &#125;  </span><br><span class="line">        logger.info(<span class="string">&quot;&gt; Logged in as: &quot;</span> + username);  </span><br><span class="line">        SecurityContextHolder.setContext(<span class="keyword">new</span> <span class="title class_">SecurityContextImpl</span>(<span class="keyword">new</span> <span class="title class_">Authentication</span>() &#123;  </span><br><span class="line">            <span class="meta">@Override</span>  </span><br><span class="line">            <span class="keyword">public</span> Collection&lt;? <span class="keyword">extends</span> <span class="title class_">GrantedAuthority</span>&gt; getAuthorities() &#123;  </span><br><span class="line">                <span class="keyword">return</span> user.getAuthorities();  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="meta">@Override</span>  </span><br><span class="line">            <span class="keyword">public</span> Object <span class="title function_">getCredentials</span><span class="params">()</span> &#123;  </span><br><span class="line">                <span class="keyword">return</span> user.getPassword();  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="meta">@Override</span>  </span><br><span class="line">            <span class="keyword">public</span> Object <span class="title function_">getDetails</span><span class="params">()</span> &#123;  </span><br><span class="line">                <span class="keyword">return</span> user;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="meta">@Override</span>  </span><br><span class="line">            <span class="keyword">public</span> Object <span class="title function_">getPrincipal</span><span class="params">()</span> &#123;  </span><br><span class="line">                <span class="keyword">return</span> user;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="meta">@Override</span>  </span><br><span class="line">            <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isAuthenticated</span><span class="params">()</span> &#123;  </span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="meta">@Override</span>  </span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAuthenticated</span><span class="params">(<span class="type">boolean</span> isAuthenticated)</span> <span class="keyword">throws</span> IllegalArgumentException &#123;  </span><br><span class="line">  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="meta">@Override</span>  </span><br><span class="line">            <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;  </span><br><span class="line">                <span class="keyword">return</span> user.getUsername();  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;));  </span><br><span class="line">        org.activiti.engine.impl.identity.Authentication.setAuthenticatedUserId(username);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">logoutAs</span><span class="params">()</span>&#123;  </span><br><span class="line">        SecurityContextHolder.clearContext();  </span><br><span class="line">        org.activiti.engine.impl.identity.Authentication.setAuthenticatedUserId(<span class="literal">null</span>);  </span><br><span class="line">        logger.info(<span class="string">&quot;Logged out&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>理解起来就是一个控制器管流程相关的，另起一个控制器管业务的。只需要通过调用activiti相关的service操作就能维护当前的状态。</li>
+</ul>
+<h1 id="activiti能做什么"><a href="#activiti能做什么" class="headerlink" title="activiti能做什么"></a>activiti能做什么</h1><ul>
+<li>当你的业务中有一套长而复杂的流程时，使用activiti可以进行管理，它有25张表用来在流程控制中描述你的业务进行到哪一步，下一步是哪，应该向哪一步走，走到哪会触发什么。</li>
+</ul>
+<h1 id="如何影响你的业务表"><a href="#如何影响你的业务表" class="headerlink" title="如何影响你的业务表"></a>如何影响你的业务表</h1><ul>
+<li>它仅仅只通过一个业务id ： BusinessKey 关联，所以一条流程和一个业务单是绑定的。</li>
+<li>想更新什么字段仍然是通过mapper更新，这里没有什么变化</li>
+</ul>
+<h1 id="前加签操作"><a href="#前加签操作" class="headerlink" title="前加签操作"></a>前加签操作</h1><ol>
+<li>流程进入“会计审批”节点（角色处理）</li>
+<li>用户点击“前加签”，系统：<ol>
+<li>将当前任务挂机或跳过</li>
+<li>动态插入一个“加签任务”给加签人（使用流程变量、任务监听）</li>
+<li>等加签人处理完成后、再恢复当前审批人任务</li>
+</ol>
+</li>
+<li>流程继续</li>
+</ol>
+<p>重要的是，如果是动态加签的方式，在bpmn图中不应该定义出节点，而是在代码中临时newTask()  然后通过流程变量来判断当前task是否是加签的task，这里比较容易踩的坑一个是加签的方式，另一个是流程变量的get&#x2F;set。作用域不太一样。要搞清这一点。</p>
+<h2 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h2><p>需求效果：上面前加签操作<br>思路：</p>
+<ol>
+<li>bpmn图中不画加签的节点，由代码动态加签，并且类型为前加签。</li>
+<li>加签时，设置一个流程变量标识这个task是一个临时的task，当前的任务是一个加签任务；由于加签任务和正常任务准备走同一个审批和拒绝的接口，在审批的接口中需要区别两种情况，方式就是通过得到当前全局流程变量的状态。</li>
+<li>这里设计上的缺点是每一个负责人都能进行加签，所以需要一些手段进行对不同的人限制入口。</li>
+</ol>
+<h3 id="流程变量的设置时机：在加签时设置流程变量，在加签完成时再次设置流程变量"><a href="#流程变量的设置时机：在加签时设置流程变量，在加签完成时再次设置流程变量" class="headerlink" title="流程变量的设置时机：在加签时设置流程变量，在加签完成时再次设置流程变量"></a>流程变量的设置时机：在加签时设置流程变量，在加签完成时再次设置流程变量</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 加签时</span></span><br><span class="line"><span class="comment">/**  </span></span><br><span class="line"><span class="comment"> * 审批动态前加签  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> dto 相关任务参数  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> gjx  </span></span><br><span class="line"><span class="comment"> */</span><span class="meta">@Override</span>  </span><br><span class="line"><span class="meta">@Transactional</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">countersign</span><span class="params">(ApproveDTO dto)</span> &#123;  </span><br><span class="line">    <span class="type">String</span> <span class="variable">userName</span> <span class="operator">=</span> CurrentUser().username;  </span><br><span class="line">    securityUtil.logInAs(userName);  </span><br><span class="line">    <span class="keyword">try</span>&#123;  </span><br><span class="line">        <span class="type">Task</span> <span class="variable">task</span> <span class="operator">=</span> taskService.createTaskQuery()  </span><br><span class="line">                .taskId(dto.getTaskId()).singleResult();  </span><br><span class="line">        <span class="keyword">if</span>(task == <span class="literal">null</span>)&#123;  </span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;任务不存在&quot;</span>);  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span>(dto.getApplyId()!=<span class="literal">null</span>)&#123;  </span><br><span class="line">            <span class="type">PaApplyRecords</span> <span class="variable">entity</span> <span class="operator">=</span> paApplyRecordsMapper.selectById(dto.getApplyId());  </span><br><span class="line">            entity.setApprovalStatus(WorkflowConstants.APPROVAL_STATUS_ADD);  </span><br><span class="line">            entity.setAddVisaId(dto.getIsAddUserId().toString());  </span><br><span class="line">            entity.setAddVisaUser(dto.getIsAddUsername());  </span><br><span class="line">            entity.setModifyTime(LocalDateTime.now());  </span><br><span class="line">            paApplyRecordsMapper.updateById(entity);  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        <span class="type">String</span> <span class="variable">processInstanceId</span> <span class="operator">=</span> task.getProcessInstanceId();  </span><br><span class="line">        <span class="type">String</span> <span class="variable">originalAssignee</span> <span class="operator">=</span> task.getAssignee();  </span><br><span class="line">        <span class="type">String</span> <span class="variable">processDefinitionId</span> <span class="operator">=</span> task.getProcessDefinitionId();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 由于加签不存在于bpmn不会被监听，需要手动写入日志  </span></span><br><span class="line">        <span class="type">PaApprovalLog</span> <span class="variable">log</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PaApprovalLog</span>();  </span><br><span class="line">        log.setProcessInstanceId(processInstanceId);  </span><br><span class="line">        log.setTaskId(task.getId());  </span><br><span class="line">        log.setBusinessId(task.getBusinessKey());  </span><br><span class="line">        <span class="type">String</span> <span class="variable">roleCode</span> <span class="operator">=</span> (String) runtimeService.getVariable(processInstanceId,<span class="string">&quot;CURRENT_ROLE_CODE&quot;</span>);  </span><br><span class="line">        log.setRoleCode(roleCode);  </span><br><span class="line">        log.setAction(<span class="string">&quot;ADD&quot;</span>);  </span><br><span class="line">        log.setComment(dto.getComment());  </span><br><span class="line">        paApprovalLogUtil.recordLog(log);  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 当前任务  </span></span><br><span class="line">        taskService.setVariable(dto.getTaskId(),<span class="string">&quot;preSignComment&quot;</span>, dto.getComment());  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 创建加签人临时任务  </span></span><br><span class="line">        <span class="type">TaskEntity</span> <span class="variable">signTask</span> <span class="operator">=</span> (TaskEntity) taskService.newTask();  </span><br><span class="line">        signTask.setName(<span class="string">&quot;加签任务（由系统插入）&quot;</span>);  </span><br><span class="line">        signTask.setAssignee(dto.getIsAddUsername());  </span><br><span class="line">  </span><br><span class="line">        signTask.setProcessInstanceId(processInstanceId);  </span><br><span class="line">        signTask.setProcessDefinitionId(processDefinitionId);  </span><br><span class="line">  </span><br><span class="line">        signTask.setDescription(<span class="string">&quot;来自原任务：&quot;</span>+ task.getName());  </span><br><span class="line">        signTask.setTenantId(task.getTenantId());  </span><br><span class="line">        taskService.saveTask(signTask);  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 设置全局流程标识  </span></span><br><span class="line">        <span class="comment">// 全局,设置变量模拟挂起,给了两个标识,作用域不一样，取法不一样  </span></span><br><span class="line">        runtimeService.setVariable(processInstanceId,<span class="string">&quot;isPreSignPending&quot;</span>,<span class="literal">true</span>);  </span><br><span class="line">        runtimeService.setVariable(processInstanceId,<span class="string">&quot;originalAssignee&quot;</span>,originalAssignee);  </span><br><span class="line">  </span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;  </span><br><span class="line">        securityUtil.logoutAs();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 加签审批完成时，再次设置流程变量</span></span><br><span class="line"><span class="comment">/**  </span></span><br><span class="line"><span class="comment"> * 审批通过  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> gjx  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> dto 相关任务参数  </span></span><br><span class="line"><span class="comment"> */</span>  </span><br><span class="line"><span class="meta">@Override</span>  </span><br><span class="line"><span class="meta">@Transactional</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">approve</span><span class="params">(ApproveDTO dto)</span> &#123;  </span><br><span class="line">    <span class="type">String</span> <span class="variable">userName</span> <span class="operator">=</span> CurrentUser().username;  </span><br><span class="line">    securityUtil.logInAs(userName);  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">try</span>&#123;  </span><br><span class="line">        <span class="type">String</span> <span class="variable">taskId</span> <span class="operator">=</span> dto.getTaskId();  </span><br><span class="line">        <span class="keyword">if</span>(dto.getTaskId() ==<span class="literal">null</span> || dto.getTaskId().isEmpty())&#123;  </span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;任务ID不能为空！&quot;</span>);  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="type">Task</span> <span class="variable">task</span> <span class="operator">=</span> taskService.createTaskQuery().taskId(taskId).singleResult();  </span><br><span class="line">        <span class="keyword">if</span>(task==<span class="literal">null</span>)&#123;  </span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;任务不存在！&quot;</span>);  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span>(dto.getIsAdd() !=<span class="literal">null</span> &amp;&amp; dto.getIsAdd())&#123;  </span><br><span class="line">            <span class="keyword">if</span>(dto.getIsAddUserId() == <span class="literal">null</span> || dto.getIsAddUsername() == <span class="literal">null</span> || dto.getIsAddUsername().isEmpty())&#123;  </span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">IllegalArgumentException</span>(<span class="string">&quot;加签人信息不完整！&quot;</span>);  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        <span class="type">String</span> <span class="variable">processInstanceId</span> <span class="operator">=</span> task.getProcessInstanceId();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 获取流程变量，判断是否在加签(全局变量)  </span></span><br><span class="line">        <span class="type">Object</span> <span class="variable">isPreSign</span> <span class="operator">=</span>  runtimeService.getVariable(processInstanceId, <span class="string">&quot;isPreSignPending&quot;</span>);  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 判断是否是加签任务(临时加签任务通过没有task_def_key)  </span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">isPreSignTask</span> <span class="operator">=</span> StringUtils.isNotBlank(task.getTaskDefinitionKey());  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// ===============加签审批入口===============  </span></span><br><span class="line">        <span class="keyword">if</span>(Boolean.TRUE.equals(isPreSign) &amp;&amp; !isPreSignTask)&#123;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// 当前为加签任务，由加签人处理  </span></span><br><span class="line">            <span class="keyword">if</span>(!userName.equals(task.getAssignee()))&#123;  </span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;您不是此加签任务的处理人！&quot;</span>);  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">            <span class="comment">// 删除当前加签任务  </span></span><br><span class="line">            runtimeService.setVariable(processInstanceId,<span class="string">&quot;isPreSignPending&quot;</span>,<span class="literal">false</span>);  </span><br><span class="line">  </span><br><span class="line">            taskService.setAssignee(taskId,<span class="string">&quot;&quot;</span>);  </span><br><span class="line">            taskService.deleteTask(taskId,<span class="string">&quot;前加签完成，清理任务&quot;</span>);  </span><br><span class="line">            <span class="comment">// 更新审批状态  </span></span><br><span class="line">            <span class="comment">// 从全局变量取得当前登录人roleCode，由监听器给出  </span></span><br><span class="line">            <span class="type">String</span> <span class="variable">currentRoleCode</span> <span class="operator">=</span> (String) runtimeService.getVariable(processInstanceId,<span class="string">&quot;CURRENT_ROLE_CODE&quot;</span>);  </span><br><span class="line">            <span class="type">PaApplyRecords</span> <span class="variable">entity</span> <span class="operator">=</span> paApplyRecordsMapper.selectById(dto.getApplyId());  </span><br><span class="line">            <span class="keyword">if</span>(currentRoleCode!=<span class="literal">null</span> &amp;&amp; !<span class="string">&quot;&quot;</span>.equals(currentRoleCode))&#123;  </span><br><span class="line">                <span class="keyword">switch</span> (currentRoleCode)&#123;  </span><br><span class="line">                    <span class="keyword">case</span> <span class="string">&quot;ROLE_KJ&quot;</span>:  </span><br><span class="line">                        entity.setApprovalStatus(WorkflowConstants.APPROVAL_STATUS_ACCOUNTING);  </span><br><span class="line">                        <span class="keyword">break</span>;                    <span class="keyword">case</span> <span class="string">&quot;ROLE_CWJL&quot;</span>:  </span><br><span class="line">                        entity.setApprovalStatus(WorkflowConstants.APPROVAL_STATUS_FINANCIAL_MANAGER);  </span><br><span class="line">                        <span class="keyword">break</span>;                    <span class="keyword">case</span> <span class="string">&quot;ROLE_CWZJ&quot;</span>:  </span><br><span class="line">                        entity.setApprovalStatus(WorkflowConstants.APPROVAL_STATUS_OFFICER);  </span><br><span class="line">                        <span class="keyword">break</span>;                    <span class="keyword">default</span>:  </span><br><span class="line">                        entity.setApprovalStatus(WorkflowConstants.APPROVAL_STATUS_GENERAL_MANAGER);  </span><br><span class="line">                &#125;  </span><br><span class="line">            &#125;  </span><br><span class="line">            entity.setModifyTime(LocalDateTime.now());  </span><br><span class="line">            paApplyRecordsMapper.updateById(entity);  </span><br><span class="line">            <span class="keyword">return</span>;        &#125;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// ==========主流程审批入口===========  </span></span><br><span class="line">        <span class="keyword">if</span>(Boolean.TRUE.equals(isPreSign))&#123;  </span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;前加签尚未完成，暂不能审批！&quot;</span>);  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        runtimeService.setVariable(processInstanceId,<span class="string">&quot;approvalAction&quot;</span>,<span class="string">&quot;APPROVE&quot;</span>);  </span><br><span class="line">        Map&lt;String,Object&gt; vars = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();  </span><br><span class="line">        vars.put(<span class="string">&quot;approveStatus&quot;</span>,<span class="literal">true</span>);  </span><br><span class="line">        <span class="comment">// 审批意见  </span></span><br><span class="line">        taskService.setVariable(taskId,<span class="string">&quot;approvalComment&quot;</span>,dto.getComment());  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 4.完成任务  </span></span><br><span class="line">        taskService.complete(dto.getTaskId(),vars);  </span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;  </span><br><span class="line">        securityUtil.logoutAs();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="核心设置点："><a href="#核心设置点：" class="headerlink" title="核心设置点："></a>核心设置点：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用runtimeService.setVariable()设置全局变量</span></span><br><span class="line"><span class="comment">// 使用runtimeService.getVariable()获取全局变量</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 全局,设置变量模拟挂起,给了两个标识,作用域不一样，取法不一样  </span></span><br><span class="line">        runtimeService.setVariable(processInstanceId,<span class="string">&quot;isPreSignPending&quot;</span>,<span class="literal">true</span>); </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除当前加签任务  </span></span><br><span class="line">            runtimeService.setVariable(processInstanceId,<span class="string">&quot;isPreSignPending&quot;</span>,<span class="literal">false</span>); </span><br></pre></td></tr></table></figure>
+<ul>
+<li>当前任务能否往下进行，需要判断当前的isPreSignPending变量，这个变量即使是使用runtimeService设置，你知道是全局的，它<strong>仍然会在表中生成两种不同的变量</strong>，所以在取的时候非常容易取成不同作用域的，但是本质是两个变量，被维护的值是不一样的，非常容易出问题！</li>
+</ul>
+<h1 id="几个常用的id区别"><a href="#几个常用的id区别" class="headerlink" title="几个常用的id区别"></a>几个常用的id区别</h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+<th>来源</th>
+<th>适用场景</th>
+<th>和set&#x2F;getVariable的关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>processInstanceId</td>
+<td>流程实例 ID，每个流程启动都会生成一个唯一 ID</td>
+<td>ProcessInstance.getId()</td>
+<td>标识一整条流程运行</td>
+<td>和 executionId 通常一致（在没有并发时）</td>
+</tr>
+<tr>
+<td>executionId</td>
+<td>当前执行路径的 ID，可以是主线或并发支线</td>
+<td>DelegateExecution.getId()</td>
+<td>ServiceTask、网关、并发节点</td>
+<td>runtimeService.setVariable()第一个参数就是它</td>
+</tr>
+<tr>
+<td>taskId</td>
+<td>当前任务的 ID，每个用户任务都会有自己的 ID</td>
+<td>Task.getId()</td>
+<td>用户审批、任务操作</td>
+<td>用于 taskService 的操作（如 claim, setVariable, complete）</td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**  </span></span><br><span class="line"><span class="comment"> * 审批列表  </span></span><br><span class="line"><span class="comment"> * 自动区分是否是加签人  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> gjx  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> dto  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span>  </span></span><br><span class="line"><span class="comment"> */</span>  </span><br><span class="line"><span class="meta">@Override</span>  </span><br><span class="line"><span class="keyword">public</span> IPage&lt;ApplyTaskRespVO&gt; <span class="title function_">getUserApprovalList</span><span class="params">(TaskQueryDTO dto)</span> &#123;  </span><br><span class="line">    <span class="type">String</span> <span class="variable">userName</span> <span class="operator">=</span> CurrentUser().username;  </span><br><span class="line">    securityUtil.logInAs(userName);  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">try</span>&#123;  </span><br><span class="line">        <span class="type">int</span> <span class="variable">pageNum</span> <span class="operator">=</span> dto.getPageNum();  </span><br><span class="line">        <span class="type">int</span> <span class="variable">pageSize</span> <span class="operator">=</span> dto.getPageSize();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 查询所有候选或指派任务  </span></span><br><span class="line">        List&lt;Task&gt; allTasks = taskService.createTaskQuery()  </span><br><span class="line">                .taskCandidateOrAssigned(userName)  </span><br><span class="line">                .list();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 通过流程变量判断是否为加签任务，如果变量不存在-非加签任务，如果变量存在且为true-加签任务  </span></span><br><span class="line">        <span class="comment">// 非加签任务列表  </span></span><br><span class="line">        List&lt;Task&gt; visibleTasks = allTasks.stream()  </span><br><span class="line">                .filter(task -&gt; &#123;  </span><br><span class="line">                    <span class="comment">// 如果是指派给用户，优先保留  </span></span><br><span class="line">                    <span class="keyword">if</span>(userName.equals(task.getAssignee())) <span class="keyword">return</span> <span class="literal">true</span>;  </span><br><span class="line">                    <span class="type">Object</span> <span class="variable">isPreSign</span> <span class="operator">=</span> runtimeService.getVariable(task.getProcessInstanceId(), <span class="string">&quot;isPreSignPending&quot;</span>);  </span><br><span class="line">                    <span class="keyword">return</span> !Boolean.TRUE.equals(isPreSign);  </span><br><span class="line">                &#125;).collect(Collectors.toList());  </span><br><span class="line">        <span class="comment">// 加签任务列表  </span></span><br><span class="line">        List&lt;Task&gt; preSignTasks = taskService.createTaskQuery()  </span><br><span class="line">                .taskAssignee(userName)  </span><br><span class="line">                .processVariableValueEquals(<span class="string">&quot;isPreSignPending&quot;</span>,<span class="literal">true</span>)  </span><br><span class="line">                .list();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 合并任务去重  </span></span><br><span class="line">        Map&lt;String, Task&gt; taskMap = <span class="keyword">new</span> <span class="title class_">LinkedHashMap</span>&lt;&gt;();  </span><br><span class="line">        visibleTasks.forEach(t -&gt; taskMap.put(t.getId(),t));  </span><br><span class="line">        preSignTasks.forEach(t -&gt; taskMap.putIfAbsent(t.getId(),t));  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 封装vo  </span></span><br><span class="line">        List&lt;ApplyTaskRespVO&gt; records = taskMap.values().stream()  </span><br><span class="line">                .map(task -&gt; buildApplyTaskRespVO(task,dto))  </span><br><span class="line">                .filter(Objects::nonNull)  </span><br><span class="line">                .collect(Collectors.toList());  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 手动分页  </span></span><br><span class="line">        <span class="type">int</span> <span class="variable">total</span> <span class="operator">=</span> records.size();  </span><br><span class="line">        <span class="type">int</span> <span class="variable">fromIndex</span> <span class="operator">=</span> Math.min((pageNum-<span class="number">1</span>)*pageSize,total);  </span><br><span class="line">        <span class="type">int</span> <span class="variable">toIndex</span> <span class="operator">=</span> Math.min(fromIndex + pageSize,total);  </span><br><span class="line">        List&lt;ApplyTaskRespVO&gt; pageRecords = records.subList(fromIndex,toIndex);  </span><br><span class="line">  </span><br><span class="line">        IPage&lt;ApplyTaskRespVO&gt; page =  <span class="keyword">new</span> <span class="title class_">Page</span>&lt;&gt;(pageNum,pageSize,total);  </span><br><span class="line">        page.setRecords(pageRecords);  </span><br><span class="line">        <span class="keyword">return</span> page;  </span><br><span class="line">  </span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;  </span><br><span class="line">        securityUtil.logoutAs();  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="简单理解"><a href="#简单理解" class="headerlink" title="简单理解"></a>简单理解</h4><ul>
+<li>processInstanceId 对应的是一个流程实例</li>
+<li>executionId 对应的是一个实际被定义的节点</li>
+<li>taskId 对应的是一个任务task，不论存在不存在于bpmn</li>
+</ul>
+<h1 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h1><p><strong>流程变量是流程之间传递信息的载体，全局变量用于任务级隔离，合理使用变量作用域是保证流程稳定可靠的基础。</strong></p>
+<h2 id="流程变量的本质："><a href="#流程变量的本质：" class="headerlink" title="流程变量的本质："></a>流程变量的本质：</h2><ul>
+<li>在流程流转时传递数据</li>
+<li>在网关判断、表达式中作条件判断</li>
+<li>任务监听器、服务任务、脚本任务中访问业务逻辑</li>
+<li>与外部系统交互</li>
+</ul>
+<h2 id="变量作用域分类（核心）"><a href="#变量作用域分类（核心）" class="headerlink" title="变量作用域分类（核心）"></a>变量作用域分类（核心）</h2><ul>
+<li>全局变量<ul>
+<li>execution级别</li>
+<li>属于整个流程实例（ProcessInstance）</li>
+<li>流程启动后存在，流程结束后清除</li>
+</ul>
+</li>
+<li>局部变量<ul>
+<li>task级别</li>
+<li>只属于某个用户任务</li>
+<li>任务创建时存在，任务完成时销毁</li>
+</ul>
+</li>
+</ul>
+<h3 id="全局变量（Global-Variables）"><a href="#全局变量（Global-Variables）" class="headerlink" title="全局变量（Global Variables）"></a>全局变量（Global Variables）</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">runtimeService.setVariable(executionId,<span class="string">&quot;key&quot;</span>,value); <span class="comment">//设置</span></span><br><span class="line">runtimeService.getVariable(exectuionId,<span class="string">&quot;key&quot;</span>); <span class="comment">//获取</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>流程变量是与<strong>流程实例</strong>绑定的，整个流程中都可以访问。</li>
+<li>比如，你在开始节点设置了“amount”&#x3D;1000，后面所有节点，包括网关，脚本任务、监听器都能获取这个变量。</li>
+<li>变量会存储在数据库的act_ru_variable表中。</li>
+</ul>
+<h3 id="局部变量（Local-Variables）"><a href="#局部变量（Local-Variables）" class="headerlink" title="局部变量（Local Variables）"></a>局部变量（Local Variables）</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">taskService.setVariableLocal(taskId,<span class="string">&quot;key&quot;</span>,value); <span class="comment">// 设置</span></span><br><span class="line">taskService.getVariableLocal(taskId,<span class="string">&quot;key&quot;</span>); <span class="comment">//获取</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>局部变量是与<strong>任务节点task</strong>绑定的，仅该任务可见</li>
+<li>比如你给任务设置了“canApprove”&#x3D;true，这个变量不会传到任务B中。</li>
+<li>完成任务后，局总变量自动删除。</li>
+</ul>
+<h1 id="流程变量容易遇到的坑"><a href="#流程变量容易遇到的坑" class="headerlink" title="流程变量容易遇到的坑"></a>流程变量容易遇到的坑</h1><ul>
+<li>用局部变量后，表达式获取 不到，导致流程不走预期分支；</li>
+<li>流程变量是强类型，如果某一节点设置了不同类型（比如int和String），可能报错；</li>
+<li>加签、退回 、自定义跳转时如果没正确清理㸄 ，容易留下脏数据，影响后续流转；</li>
+<li>设置变量时，未使用正确的execution或taskId，导致变量设置失败但无报错。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/activiti%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/activiti%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:22:28" itemprop="dateCreated datePublished" datetime="2025-06-19T14:22:28+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Activiti的表说明"><a href="#Activiti的表说明" class="headerlink" title="Activiti的表说明"></a>Activiti的表说明</h1><ul>
+<li>使用了25张表，大致分为四类<ul>
+<li>ACT_RE    流程定义和流程资源</li>
+<li>ACT_RU    运行时，流程实例、任务、变量</li>
+<li>ACT_HI    历史表</li>
+<li>ACT_GE    通用表</li>
+</ul>
+</li>
+</ul>
+<h1 id="Activiti的架构、类关系图"><a href="#Activiti的架构、类关系图" class="headerlink" title="Activiti的架构、类关系图"></a>Activiti的架构、类关系图</h1><ul>
+<li>获得流程引擎的工具类<ul>
+<li>ProcessEngines. 使用默认方式获取 配置文件，构造流程引擎。配置文件名字activiti.cfg.xml,放在classpath下</li>
+<li>ProcessEngineConfiguration. 可以自定义配置文件名</li>
+</ul>
+</li>
+<li>ProcessEngine：流程引擎。获取各种服务的接口。</li>
+<li>服务接口：用于流程的部署、执行、管理，使用这些接口就是操作对应的数据表。<ul>
+<li>RepositoryService    资源管理类</li>
+<li>RuntimeService    运行时管理类</li>
+<li>TaskService    任务管理类</li>
+<li>HistoryService    历史数据管理类</li>
+<li>ManagementService    流程引擎管理类</li>
+</ul>
+</li>
+</ul>
+<h1 id="BPMN-插件"><a href="#BPMN-插件" class="headerlink" title="BPMN 插件"></a>BPMN 插件</h1><ul>
+<li>插件 activiti BPMN  visualizer 或者 使用Camunda Modeler客户端</li>
+</ul>
+<h1 id="流程符号、画流程图"><a href="#流程符号、画流程图" class="headerlink" title="流程符号、画流程图"></a>流程符号、画流程图</h1><ul>
+<li>流程符号：事件event、活动Activity、网关Gateway，流向</li>
+<li>使用流程设计器画出流程图<ul>
+<li>创建bpmn文件，在流程设计器使用流程符号来表达流程。指定流程的key，指定任务负责人（固定一个人，或者是一类角色、一类用户组）</li>
+</ul>
+</li>
+<li>BPMN文件本质上是XML文件，可以选择在设计时生成png文件方便向人描述流程</li>
+</ul>
+<h1 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h1><ul>
+<li>使用Activiti提供的API把流程图的内容写入数据库中</li>
+<li>属于资源类操作，使用RepositoryService</li>
+<li>单文件部署： 把bpmn文件和PNG文件一个一个处理</li>
+<li>压缩包部署： 把BPMN文件和PNG打压缩包来处理</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Deployment</span> <span class="variable">deploy</span> <span class="operator">=</span> reposityService.createDeployment();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>部署操作表<ul>
+<li>act_re_deployment    部署表</li>
+<li>act_re_procdef    流程定义表</li>
+<li>act_ge_bytearray    资源表</li>
+</ul>
+</li>
+</ul>
+<h1 id="启动流程实例"><a href="#启动流程实例" class="headerlink" title="启动流程实例"></a>启动流程实例</h1><ul>
+<li>使用RuntimeService根据流程定义的Key</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">ProcessInstance</span> <span class="variable">instance</span> <span class="operator">=</span> runtimeService.startProcessInstanceByKey(<span class="string">&quot;myEvection&quot;</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>操作表</li>
+</ul>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">act_hi_actinst    流程实例执行历史信息</span><br><span class="line">act_hi_identitylink    流程参与用户的历史信息</span><br><span class="line">act_hi_procinst    流程实例的历史信息</span><br><span class="line">act_hi_taskinst    流程任务的历史信息</span><br><span class="line">act_ru_execution    流程执行信息</span><br><span class="line">act_ru_identitylink    流程的正在参与用户信息</span><br><span class="line">act_ru_task    流程当前任务信息</span><br></pre></td></tr></table></figure>
+<h1 id="任务查询"><a href="#任务查询" class="headerlink" title="任务查询"></a>任务查询</h1><ul>
+<li>使用TaskService,根据流程定义的Key，任务的负责人来进行查询</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Task&gt; taskList = taskService.createTaskQuery()</span><br><span class="line">	.processDefinitionKey(<span class="string">&quot;myEvection&quot;</span>) <span class="comment">// 流程Key</span></span><br><span class="line">	.taskAssignee(<span class="string">&quot;zhangsan&quot;</span>) <span class="comment">//要查询的负责人</span></span><br><span class="line">	.list();</span><br></pre></td></tr></table></figure>
+
+<h1 id="任务完成"><a href="#任务完成" class="headerlink" title="任务完成"></a>任务完成</h1><ul>
+<li>使用TaskService，用任务Id完成任务</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskService.complete(<span class="string">&quot;2505&quot;</span>);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="XenoGuo"
+      src="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+  <p class="site-author-name" itemprop="name">XenoGuo</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/XenoGuo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;XenoGuo" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jianxinguo2019@gmail.com" title="E-Mail → mailto:jianxinguo2019@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">XenoGuo</span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div> -->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":120,"height":240},"mobile":{"show":false},"react":{"opacityDefault":1,"opacityOnHover":1},"log":false,"tagMode":false});</script></body>
+</html>
