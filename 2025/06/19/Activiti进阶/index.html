@@ -20,14 +20,6 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac","show_in_mobile":true},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-(function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误！');
-                history.back();
-            }
-        }
-    })();
 
   <meta name="description" content="Activiti进阶一、流程实例什么是流程实例流程实例（ProcessInstance）代表流程定义的执行实例。 一个流程实例包括了所有的运行节点。我们可以利用这个对象来了解当前流程实例的进度等信息。 例如：用户或程序按照流程定义内容发起一个流程，这就是一个流程实例。 流程定义和流程实例的图解：  启动流程实例 并添加Businesskey（业务标识）流程定义部署在activiti后，就可以在系统">
 <meta property="og:type" content="article">
@@ -88,8 +80,8 @@
 <meta property="article:published_time" content="2025-06-19T06:08:57.000Z">
 <meta property="article:modified_time" content="2025-06-19T06:08:57.000Z">
 <meta property="article:author" content="XenoGuo">
-<meta property="article:tag" content="工作流">
 <meta property="article:tag" content="黑马">
+<meta property="article:tag" content="工作流">
 <meta property="article:tag" content="activiti7">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/1577498489089.png">
@@ -685,8 +677,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/" rel="tag"># 工作流</a>
               <a href="/tags/%E9%BB%91%E9%A9%AC/" rel="tag"># 黑马</a>
+              <a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/" rel="tag"># 工作流</a>
               <a href="/tags/activiti7/" rel="tag"># activiti7</a>
           </div>
 
