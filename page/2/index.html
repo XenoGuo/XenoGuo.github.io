@@ -184,6 +184,170 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-java%E8%BD%AC%E6%8D%A2%E7%B1%BBconverter/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-java%E8%BD%AC%E6%8D%A2%E7%B1%BBconverter/" class="post-title-link" itemprop="url">模板-java转换类converter</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:26:01" itemprop="dateCreated datePublished" datetime="2025-06-19T14:26:01+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><ul>
+<li>比较重要的是  如果要使用BeanUtils.copyProperties(a , b)，字段要对应上，而且copyProperties不能拷list，得拆开一个一个拷。</li>
+<li>如果字段名写成不一样，需要手动get&#x2F;set</li>
+</ul>
+<h1 id="vo、dto、entity转换类demo"><a href="#vo、dto、entity转换类demo" class="headerlink" title="vo、dto、entity转换类demo"></a>vo、dto、entity转换类demo</h1><ul>
+<li>前提是转换间字段要能匹配上，定义的一样</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PersonalInfoConfigConverter</span> &#123;  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfigDTO <span class="title function_">toDTO</span><span class="params">(PersonalInfoConfigCreateVO vo)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfigDTO</span> <span class="variable">dto</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigDTO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(vo,dto);  </span><br><span class="line">        <span class="keyword">return</span> dto;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfigDTO <span class="title function_">toDTO</span><span class="params">(PersonalInfoConfigUpdateVO vo)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfigDTO</span> <span class="variable">dto</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigDTO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(vo,dto);  </span><br><span class="line">        <span class="keyword">return</span> dto;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfigRespVO <span class="title function_">toVO</span><span class="params">(PersonalInfoConfigDTO dto)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfigRespVO</span> <span class="variable">vo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigRespVO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(dto,vo);  </span><br><span class="line">        <span class="keyword">return</span> vo;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfig <span class="title function_">toEntity</span><span class="params">(PersonalInfoConfigDTO dto)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfig</span> <span class="variable">entity</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfig</span>();  </span><br><span class="line">        BeanUtils.copyProperties(dto,entity);  </span><br><span class="line">        <span class="keyword">return</span> entity;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> PersonalInfoConfigDTO <span class="title function_">toDTO</span><span class="params">(PersonalInfoConfig entity)</span>&#123;  </span><br><span class="line">        <span class="type">PersonalInfoConfigDTO</span> <span class="variable">dto</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigDTO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(entity,dto);  </span><br><span class="line">        <span class="keyword">return</span> dto;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> PersonalInfoConfigRespVO <span class="title function_">toRespVO</span><span class="params">(PersonalInfoConfigDTO dto)</span>&#123;  </span><br><span class="line">        <span class="keyword">if</span>(dto == <span class="literal">null</span> )<span class="keyword">return</span> <span class="literal">null</span>;  </span><br><span class="line">        <span class="type">PersonalInfoConfigRespVO</span> <span class="variable">vo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PersonalInfoConfigRespVO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(dto,vo);  </span><br><span class="line">        <span class="keyword">return</span> vo;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> List&lt;PersonalInfoConfigRespVO&gt; <span class="title function_">toRespVOList</span><span class="params">(List&lt;PersonalInfoConfigDTO&gt; dtoList)</span>&#123;  </span><br><span class="line">        <span class="keyword">if</span>(dtoList == <span class="literal">null</span> || dtoList.isEmpty())<span class="keyword">return</span> Collections.emptyList();  </span><br><span class="line">        <span class="keyword">return</span> dtoList.stream()  </span><br><span class="line">                .map(PersonalInfoConfigConverter::toRespVO)  </span><br><span class="line">                .collect(Collectors.toList());  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="DTO-VO-List的转换"><a href="#DTO-VO-List的转换" class="headerlink" title="DTO VO  List的转换"></a>DTO VO  List的转换</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 错误示例</span></span><br><span class="line"><span class="meta">@GetMapping(&quot;/fundList&quot;)</span>  </span><br><span class="line">Result&lt;List&lt;ItemWithDetailRespVO&gt;&gt; <span class="title function_">getFundList</span><span class="params">()</span>&#123;  </span><br><span class="line">    List&lt;ItemWithDetailDTO&gt; dtoList = paExpenseConfigService.getFundList();  </span><br><span class="line">    List&lt;ItemWithDetailRespVO&gt; voList = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();  </span><br><span class="line">    BeanUtils.copyProperties(dtoList,voList);  </span><br><span class="line">    <span class="keyword">return</span> Result.ok(voList);  </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// BeanUtils.copyProperties(Object source,Object target)的设计本意是</span></span><br><span class="line">BeanUtils.copyProperties(sourceBean,targetBean);</span><br><span class="line"><span class="comment">// 但是在这里，这样写是无效的</span></span><br><span class="line">BeanUtils.copyProperties(List&lt;DTO&gt;,List&lt;VO&gt;);</span><br><span class="line"><span class="comment">// 它不会作任何元素级别的复制，只会尝试把source(List)中的属性赋值给target(List)，但这些容器类型并没有字段匹配，所以结果是空的。</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 正确操作</span></span><br><span class="line"><span class="meta">@GetMapping(&quot;/fundList&quot;)</span>  </span><br><span class="line">Result&lt;List&lt;ItemWithDetailRespVO&gt;&gt; <span class="title function_">getFundList</span><span class="params">()</span>&#123;  </span><br><span class="line">    List&lt;ItemWithDetailDTO&gt; dtoList = paExpenseConfigService.getFundList();  </span><br><span class="line">    List&lt;ItemWithDetailRespVO&gt; voList = dtoList.stream()  </span><br><span class="line">            .map(dto -&gt; &#123;  </span><br><span class="line">                <span class="type">ItemWithDetailRespVO</span> <span class="variable">vo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ItemWithDetailRespVO</span>();  </span><br><span class="line">                BeanUtils.copyProperties(dto,vo);  </span><br><span class="line">                <span class="keyword">return</span> vo;  </span><br><span class="line">            &#125;).collect(Collectors.toList());  </span><br><span class="line">    <span class="keyword">return</span> Result.ok(voList);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/%E6%A8%A1%E6%9D%BF-%E5%AF%BC%E5%87%BA%E5%88%97%E8%A1%A8%E4%B8%BAexcel%E6%96%87%E4%BB%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/XenoGuo/image-hosting@main/img/avatar.png">
+      <meta itemprop="name" content="XenoGuo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XenoGuo's BLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/19/%E6%A8%A1%E6%9D%BF-%E5%AF%BC%E5%87%BA%E5%88%97%E8%A1%A8%E4%B8%BAexcel%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">模板-导出列表为excel文件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-19 14:24:44" itemprop="dateCreated datePublished" datetime="2025-06-19T14:24:44+08:00">2025-06-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h1><ul>
+<li>中台项目中</li>
+<li>由于前端拦截器里封装了请求，只能选择使用封装后的请求，否则会没有数据</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// xxx.js请求</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">exportSpecialCollection</span>(<span class="params">param</span>) &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">await</span> http.<span class="title function_">getDown</span>(<span class="string">&quot;/api/specialCollection/export&quot;</span>, param, <span class="string">&#x27;blob&#x27;</span>);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>调用方法可以直接按照下面的方式</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 导出方法</span></span><br><span class="line"><span class="keyword">async</span> <span class="title function_">handleExport</span>(<span class="params"></span>) &#123;</span><br><span class="line">	<span class="variable language_">this</span>.<span class="property">exportLoading</span> = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">let</span> params = &#123;</span><br><span class="line">		...<span class="variable language_">this</span>.<span class="property">searchModel</span>,</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">try</span> &#123;</span><br><span class="line">		<span class="variable language_">this</span>.<span class="property">$modal</span>.<span class="title function_">confirm</span>(<span class="string">&#x27;是否确认导出数据项？&#x27;</span>).<span class="title function_">then</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">			<span class="keyword">return</span> paymentReviewApi.<span class="title function_">exportApplyRecords</span>(params);</span><br><span class="line">		&#125;).<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">			<span class="variable language_">this</span>.<span class="property">$download</span>.<span class="title function_">excel</span>(response, <span class="string">&#x27;付款审核.xlsx&#x27;</span>);</span><br><span class="line">		&#125;)</span><br><span class="line">	&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">		<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;导出失败&quot;</span>,error);</span><br><span class="line">		<span class="variable language_">this</span>.<span class="property">$message</span>.<span class="title function_">error</span>(<span class="string">&#x27;导出失败，请稍后再试&#x27;</span>)</span><br><span class="line">	&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">		<span class="variable language_">this</span>.<span class="property">exportLoading</span> = <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<h1 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h1><ul>
+<li>使用了EasyExcel，后端对EasyExcel进行了封装，调用封装后的方法，如果有一些字段匹配不上，需要手动直接匹配，需要进行判空，可能会出错</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// service</span></span><br><span class="line"><span class="comment">/**  </span></span><br><span class="line"><span class="comment"> * 导出明细Excel  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> query 条件参数  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span>  excelVOList  </span></span><br><span class="line"><span class="comment"> */</span><span class="meta">@Override</span>  </span><br><span class="line"><span class="keyword">public</span> List&lt;PaApplyRecordsExportExcelVO&gt; <span class="title function_">exportApplyRecords</span><span class="params">(ApplyQueryDTO query)</span>&#123;  </span><br><span class="line">    List&lt;PaApplyRecordsRespVO&gt; result = paApplyRecordsMapper.selectDetailPage(query);  </span><br><span class="line">    Map&lt;Integer,String&gt; statusMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();  </span><br><span class="line">    statusMap.put(<span class="number">0</span>,<span class="string">&quot;待提交&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">1</span>,<span class="string">&quot;待部门负责人审批&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">2</span>,<span class="string">&quot;待财务负责人审批&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">3</span>,<span class="string">&quot;待总经理审批&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">4</span>,<span class="string">&quot;待支付&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">5</span>,<span class="string">&quot;已支付&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">6</span>,<span class="string">&quot;审批未通过&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">7</span>,<span class="string">&quot;已取消&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">8</span>,<span class="string">&quot;已关闭&quot;</span>);  </span><br><span class="line">    statusMap.put(<span class="number">9</span>,<span class="string">&quot;已归档&quot;</span>);  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">return</span> result.stream().map(item -&gt; &#123;  </span><br><span class="line">        <span class="type">PaApplyRecordsExportExcelVO</span> <span class="variable">vo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PaApplyRecordsExportExcelVO</span>();  </span><br><span class="line">        BeanUtils.copyProperties(item,vo);  </span><br><span class="line">        <span class="keyword">if</span>(item.getApplyStatus()!=<span class="literal">null</span>)&#123;  </span><br><span class="line">            vo.setApplyStatus(statusMap.get(item.getApplyStatus()));  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span>(item.getApplyTime()!=<span class="literal">null</span>)&#123;  vo.setApplyTime(Date.from(item.getApplyTime().atZone(ZoneId.systemDefault()).toInstant()));  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span>(item.getPaymentTime()!=<span class="literal">null</span>)&#123;  vo.setPaymentTime(Date.from(item.getPaymentTime().atZone(ZoneId.systemDefault()).toInstant()));  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">return</span> vo;  </span><br><span class="line">    &#125;).collect(Collectors.toList());  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// controller</span></span><br><span class="line"><span class="comment">/**  </span></span><br><span class="line"><span class="comment"> * 返回excel文件流  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> response 响应体  </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> query 条件参数  </span></span><br><span class="line"><span class="comment"> */</span>  </span><br><span class="line"><span class="meta">@GetMapping(&quot;/export&quot;)</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">exportApplyRecords</span><span class="params">(HttpServletResponse response, ApplyQueryDTO query)</span>&#123;  </span><br><span class="line">    <span class="keyword">try</span>&#123;  </span><br><span class="line">        <span class="comment">// 1. 设置响应头  </span></span><br><span class="line">        setExcelResponseHeader(response, <span class="string">&quot;用户数据.xlsx&quot;</span>);  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 查询 + 转换数据  </span></span><br><span class="line">        List&lt;PaApplyRecordsExportExcelVO&gt; data = paApplyRecordsService.exportApplyRecords(query);  </span><br><span class="line">  </span><br><span class="line">        ExcelUtils.write(response, <span class="string">&quot;付费明细单.xlsx&quot;</span>, <span class="string">&quot;付费明细单&quot;</span>, PaApplyRecordsExportExcelVO.class, data);  </span><br><span class="line">        System.out.println(<span class="string">&quot;response: &quot;</span>+response);  </span><br><span class="line">    &#125;<span class="keyword">catch</span> (Exception e)&#123;  </span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">&quot;导出excel失败&quot;</span>,e);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="comment">/**  </span></span><br><span class="line"><span class="comment"> * 设置Excel下载响应头  </span></span><br><span class="line"><span class="comment"> */</span>  </span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">setExcelResponseHeader</span><span class="params">(HttpServletResponse response, String fileName)</span> <span class="keyword">throws</span> UnsupportedEncodingException &#123;  </span><br><span class="line">    <span class="comment">// 文件名处理，防止中文乱码  </span></span><br><span class="line">    <span class="type">String</span> <span class="variable">encodedFileName</span> <span class="operator">=</span> URLEncoder.encode(fileName, <span class="string">&quot;UTF-8&quot;</span>).replaceAll(<span class="string">&quot;\\+&quot;</span>, <span class="string">&quot;%20&quot;</span>);  </span><br><span class="line">    response.setContentType(<span class="string">&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;</span>);  </span><br><span class="line">    response.setCharacterEncoding(<span class="string">&quot;utf-8&quot;</span>);  </span><br><span class="line">    response.setHeader(<span class="string">&quot;Content-disposition&quot;</span>,<span class="string">&quot;attachment;filename*=utf-8&#x27;&#x27;&quot;</span> + encodedFileName + <span class="string">&quot;.xlsx&quot;</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>按照以上方法，需要考虑具体项目如何定义拦截器的</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/19/activiti%E5%AE%9E%E6%93%8D%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1711,7 +1875,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
